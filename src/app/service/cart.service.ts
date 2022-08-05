@@ -21,7 +21,7 @@ addtoCart(product:any){
   this.cartItemList.push(product);
   this.productList.next(this.cartItemList);
   this.getTotalPrice();
-  console.log(this.cartItemList)
+  console.log("OP",this.cartItemList)
   }
 
   getTotalPrice() : number{
