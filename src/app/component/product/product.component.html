@@ -4,19 +4,19 @@
             <div class="as-item">
                 <a>
                 <img style="width: 62px;" src="../../../assets/allproducts.jfif" alt="">
-                <h6>All Products</h6>
+                <h6 id="info">All Products</h6>
             </a>
             </div>
             <div class="as-item">
                 <a>
                     <img style="width: 70px;" src="../../../assets/fashion.jfif" alt="">
-                    <h6>Fashion</h6> 
+                    <h6 id="info1">Fashion</h6> 
                 </a>
                 </div>
                 <div class="as-item">
                 <a>
                     <img style="width: 62px;" src="../../../assets/jewellery.jfif">
-                    <h6>Jewllery</h6>
+                    <h6 id="info2">Jewllery</h6>
                 </a>
                 </div>
 
@@ -24,7 +24,7 @@
                 <div>
                     <a>
                         <img style="width: 62px;" src="../../../assets/electronic.jfif">
-                        <h6>Electronics</h6>
+                        <h6 id="info3">Electronics</h6>
                     </a>
                     </div>
                     
@@ -38,9 +38,11 @@
                     <div class="card col-md-3">
                         <img src="{{item.image}}" alt="" >
                         <h5 style="white-space: norwap;overflow:hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.title}}</h5>
-                        <p style="white-space: norwap;overflow:hidden;text-overflow: ellipsis;max-width: 100ch;">{{item.discription}}</p>
+                        <p id="selenium"style="white-space: norwap;overflow:hidden;text-overflow: ellipsis;max-width: 100ch;">
+                           This is description of overall products....
+                            {{item.discription}}</p>
                         <p><strong>price</strong>${{item.price}}</p>
-                        <button class="btn btn-primary"(click)=addtocart(item)>Add to cart</button>
+                        <button id="click" class="btn btn-primary"(click)=addtocart(item)>Add to cart</button>
     
                     </div>
 
